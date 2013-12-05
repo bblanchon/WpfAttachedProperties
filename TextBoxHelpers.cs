@@ -38,14 +38,12 @@ namespace WpfAttachedProperties
             if (oldValue)
             {
                 textBox.PreviewTextInput -= OnPreviewTextInput;
-
             }
 
             var newValue = (bool)e.NewValue;
             if (newValue)
             {
                 textBox.PreviewTextInput += OnPreviewTextInput;
-
             }
         }
 
