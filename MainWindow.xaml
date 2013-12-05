@@ -1,0 +1,10 @@
+﻿<Window x:Class="WpfAttachedProperties.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:my="clr-namespace:WpfAttachedProperties"
+        Title="WPF attached properties, an alternative to code behind" Height="95.075" Width="369.328">
+    <UniformGrid Rows="2">
+        <Label>This TextBox only accepts alphanumeric characters :</Label>
+        <TextBox my:TextBoxHelpers.OnlyHexadecimal="True" />
+    </UniformGrid>
+</Window>
