@@ -13,14 +13,14 @@ namespace WpfAttachedProperties
     {
         const string ALLOWED_CHARS = "0123456789ABCDEFabcdef";
 
-        public static bool GetOnlyHexadecimal(TextBox obj)
+        public static bool GetOnlyHexadecimal(TextBox textBox)
         {
-            return (bool)obj.GetValue(OnlyHexadecimalProperty);
+            return (bool)textBox.GetValue(OnlyHexadecimalProperty);
         }
 
-        public static void SetOnlyHexadecimal(TextBox obj, bool value)
+        public static void SetOnlyHexadecimal(TextBox textBox, bool value)
         {
-            obj.SetValue(OnlyHexadecimalProperty, value);
+            textBox.SetValue(OnlyHexadecimalProperty, value);
         }
 
         public static readonly DependencyProperty OnlyHexadecimalProperty =
